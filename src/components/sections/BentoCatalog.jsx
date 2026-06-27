@@ -156,26 +156,20 @@ export function BentoCatalog() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Swipe Indicator (Mobile Only) */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 md:hidden flex items-center gap-2 text-white/80 font-bold animate-pulse whitespace-nowrap z-50 pointer-events-none drop-shadow-md bg-black/30 px-3 py-1.5 rounded-full backdrop-blur-sm">
-          <ChevronLeft className="w-4 h-4" />
-          <span className="text-[10px] uppercase tracking-widest">Geser</span>
-          <ChevronRight className="w-4 h-4" />
-        </div>
       </div>
 
       {/* Navigation Arrows */}
       <button 
         onClick={() => paginate(-1)}
-        className="absolute left-4 md:left-12 top-1/2 -translate-y-1/2 p-4 rounded-full bg-white/5 hover:bg-white/20 text-white backdrop-blur-md border border-white/10 transition-all z-40 hidden md:block"
+        className="absolute left-2 md:left-12 top-1/2 -translate-y-1/2 p-2 md:p-4 rounded-full bg-white/5 hover:bg-white/20 text-white backdrop-blur-md border border-white/10 transition-all z-40"
       >
-        <ChevronLeft className="w-8 h-8" />
+        <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
       </button>
       <button 
         onClick={() => paginate(1)}
-        className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 p-4 rounded-full bg-white/5 hover:bg-white/20 text-white backdrop-blur-md border border-white/10 transition-all z-40 hidden md:block"
+        className="absolute right-2 md:right-12 top-1/2 -translate-y-1/2 p-2 md:p-4 rounded-full bg-white/5 hover:bg-white/20 text-white backdrop-blur-md border border-white/10 transition-all z-40"
       >
-        <ChevronRight className="w-8 h-8" />
+        <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
       </button>
 
       {/* Details Glass Card */}
