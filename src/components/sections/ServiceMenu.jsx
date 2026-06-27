@@ -30,8 +30,8 @@ export function ServiceMenu() {
   return (
     <section className="relative w-full min-h-screen py-24 bg-pure-black overflow-hidden border-t border-white/5 flex items-center">
       
-      {/* 3D Teardown Background Model */}
-      <div className="absolute inset-0 z-0 h-full w-full flex items-center justify-center">
+      {/* 3D Teardown Background Model (Hidden on Mobile for Performance) */}
+      <div className="absolute inset-0 z-0 h-full w-full hidden md:flex items-center justify-center">
         <model-viewer 
           alt="3D Teardown Model" 
           src="/iPhone-12-Teardown.glb" 
