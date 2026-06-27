@@ -157,7 +157,7 @@ export function BentoCatalog() {
         </AnimatePresence>
 
         {/* Swipe Indicator (Mobile Only) */}
-        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:hidden flex items-center gap-2 text-white/50 animate-pulse whitespace-nowrap">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 md:hidden flex items-center gap-2 text-white/80 font-bold animate-pulse whitespace-nowrap z-50 pointer-events-none drop-shadow-md bg-black/30 px-3 py-1.5 rounded-full backdrop-blur-sm">
           <ChevronLeft className="w-4 h-4" />
           <span className="text-[10px] uppercase tracking-widest">Geser</span>
           <ChevronRight className="w-4 h-4" />
