@@ -119,7 +119,7 @@ export function BentoCatalog() {
       </div>
 
       {/* 3D Carousel Stage */}
-      <div className="relative w-[75vw] max-w-[280px] md:max-w-sm aspect-[9/16] perspective-[1200px] z-30 mt-[-5vh]">
+      <div className="relative w-[60vw] max-w-[220px] md:max-w-sm aspect-[9/16] perspective-[1200px] z-30 mt-[-5vh]">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={page}
@@ -155,6 +155,13 @@ export function BentoCatalog() {
             <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none" />
           </motion.div>
         </AnimatePresence>
+
+        {/* Swipe Indicator (Mobile Only) */}
+        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:hidden flex items-center gap-2 text-white/50 animate-pulse whitespace-nowrap">
+          <ChevronLeft className="w-4 h-4" />
+          <span className="text-[10px] uppercase tracking-widest">Geser</span>
+          <ChevronRight className="w-4 h-4" />
+        </div>
       </div>
 
       {/* Navigation Arrows */}
@@ -179,20 +186,20 @@ export function BentoCatalog() {
         transition={{ delay: 0.2, duration: 0.6, type: 'spring' }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[95%] max-w-4xl bg-zinc-900/60 backdrop-blur-3xl border border-white/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-40"
       >
-        <div className="flex-1 mb-6 md:mb-0 md:mr-8 text-center md:text-left">
-          <h3 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-3">
+        <div className="flex-1 mb-4 md:mb-0 md:mr-8 text-center md:text-left">
+          <h3 className="text-xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-2">
             {activeItem.name}
           </h3>
-          <p className="text-gray-300 text-xs md:text-base leading-relaxed">
+          <p className="text-gray-300 text-[11px] md:text-base leading-relaxed">
             {activeItem.fullDesc}
           </p>
         </div>
         
         <div className="flex flex-col items-center md:items-end shrink-0 w-full md:w-auto">
-          <p className="text-xs md:text-sm text-gray-400 mb-1">Harga Spesial</p>
-          <p className="text-xl md:text-3xl font-bold text-white mb-4">{activeItem.price}</p>
-          <button className="flex items-center justify-center w-full md:w-auto gap-3 bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-bold hover:bg-gray-200 hover:scale-105 transition-all shadow-lg shadow-white/10">
-            <ShoppingCart className="w-5 h-5" /> Pesan Sekarang
+          <p className="text-[10px] md:text-sm text-gray-400 mb-1">Harga Spesial</p>
+          <p className="text-lg md:text-3xl font-bold text-white mb-3">{activeItem.price}</p>
+          <button className="flex items-center justify-center w-full md:w-auto gap-2 bg-white text-black px-5 py-2.5 md:px-8 md:py-4 rounded-full text-xs md:text-base font-bold hover:bg-gray-200 hover:scale-105 transition-all shadow-lg shadow-white/10">
+            <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" /> Pesan
           </button>
         </div>
       </motion.div>
