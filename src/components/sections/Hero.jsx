@@ -86,7 +86,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 mb-4 drop-shadow-2xl">
+          <h1 className="text-4xl md:text-7xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 mb-4 drop-shadow-2xl">
             Cari iPhone Termurah <br /> Se-Malang Raya?
           </h1>
         </motion.div>
@@ -96,7 +96,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="text-xl md:text-2xl font-medium text-titanium-silver mb-8 drop-shadow-lg">
+          <p className="text-lg md:text-2xl font-medium text-titanium-silver mb-8 drop-shadow-lg">
             Terpercaya, 100% Original. <span className="text-white font-bold">izy store</span> aja.
           </p>
         </motion.div>
@@ -124,7 +124,7 @@ export function Hero() {
         className="fixed inset-0 z-0 pointer-events-none flex items-center justify-center bg-pure-black"
       >
         <motion.div 
-          className="relative w-full h-full flex items-center justify-center"
+          className="relative w-full h-full flex items-center justify-center mt-24 md:mt-0"
           initial={{ y: 50, opacity: 0, scale: 0.9 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
