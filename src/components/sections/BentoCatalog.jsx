@@ -76,7 +76,7 @@ export function BentoCatalog() {
   };
 
   return (
-    <section id="katalog" className="relative w-full min-h-[90vh] bg-black overflow-hidden flex flex-col items-center justify-center py-16 z-20 perspective-[2000px]">
+    <section id="katalog" className="relative w-full min-h-[90vh] bg-black overflow-hidden flex flex-col items-center justify-center py-8 md:py-16 z-20 perspective-[2000px]">
       
       {/* Dynamic Background Glow */}
       <AnimatePresence mode="popLayout">
@@ -107,19 +107,19 @@ export function BentoCatalog() {
       </div>
 
       {/* Header */}
-      <div className="absolute top-8 left-0 w-full px-8 flex justify-between items-end z-30">
+      <div className="relative w-full px-6 md:absolute md:top-8 md:left-0 md:px-8 flex justify-start items-end z-30 mb-8 md:mb-0 mt-4 md:mt-0">
         <div>
-          <h2 className="text-sm uppercase tracking-widest text-blue-400 font-semibold mb-2">
+          <h2 className="text-xs md:text-sm uppercase tracking-widest text-blue-400 font-semibold mb-2">
             katalog produk
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-white">
+          <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight pr-4 md:pr-0">
             Rekomendasi Terbaik Untukmu.
           </h3>
         </div>
       </div>
 
       {/* 3D Carousel Stage */}
-      <div className="relative w-[55vw] max-w-[200px] md:max-w-[320px] aspect-[9/16] perspective-[1200px] z-30 mt-4 mb-28">
+      <div className="relative w-[55vw] max-w-[200px] md:max-w-[320px] aspect-[9/16] perspective-[1200px] z-30 mt-4 mb-8 md:mb-28">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={page}

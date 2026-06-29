@@ -39,18 +39,19 @@ export const TradeIn = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter"
           >
             Tukar Tambah Lebih Mudah <br className="hidden md:block"/> & Menguntungkan.
           </motion.h2>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-2xl mx-auto"
           >
             Jadikan iPhone lamamu bernilai tinggi. Upgrade ke model terbaru tanpa harus bayar harga penuh.
@@ -68,8 +69,8 @@ export const TradeIn = () => {
                 key={step.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
                 className="flex flex-col items-center text-center group"
               >
                 <div className={`w-24 h-24 rounded-3xl bg-gradient-to-br ${step.color} p-[1px] mb-8 group-hover:-translate-y-2 transition-transform duration-300 shadow-2xl`}>
@@ -87,8 +88,8 @@ export const TradeIn = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.6 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="flex justify-center"
         >
           <button 
