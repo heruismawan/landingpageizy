@@ -6,8 +6,11 @@ export function ImageSequence({ progress, frameCount = 192 }) {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const step = isMobile ? 3 : 1; // Load every 3rd frame on mobile
     const loadedImages = [];
-    for (let i = 1; i <= frameCount; i++) {
+    
+    for (let i = 1; i <= frameCount; i += step) {
       const img = new Image();
       const frameNum = i.toString().padStart(3, '0');
       // Preload images into browser cache

@@ -28,7 +28,7 @@ const services = [
 
 export function ServiceMenu() {
   return (
-    <section className="relative w-full min-h-screen py-24 bg-pure-black overflow-hidden border-t border-white/5 flex items-center">
+    <section id="layanan" className="relative w-full min-h-screen py-24 bg-pure-black overflow-hidden border-t border-white/5 flex items-center">
       
       {/* 3D Teardown Background Model (Hidden on Mobile for Performance) */}
       <div className="absolute inset-0 z-0 h-full w-full hidden md:flex items-center justify-center">

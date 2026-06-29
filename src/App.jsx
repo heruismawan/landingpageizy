@@ -4,7 +4,11 @@ import { Navbar } from './components/ui/Navbar'
 import { Hero } from './components/sections/Hero'
 import { BentoCatalog } from './components/sections/BentoCatalog'
 import { ServiceMenu } from './components/sections/ServiceMenu'
-import { Comparison } from './components/sections/Comparison'
+import { TradeIn } from './components/sections/TradeIn'
+import { Testimonial } from './components/sections/Testimonial'
+import { WhatsAppCTA } from './components/sections/WhatsAppCTA'
+import { Footer } from './components/sections/Footer'
+import { FloatingSocials } from './components/ui/FloatingSocials'
 import { MobileAppLayout } from './components/mobile/MobileAppLayout'
 import Lenis from 'lenis'
 
@@ -42,12 +46,11 @@ function LandingPage() {
         <Hero />
         <BentoCatalog />
         <ServiceMenu />
-        <Comparison />
-        
-        {/* Footer Placeholder */}
-        <footer className="py-12 border-t border-white/10 text-center text-gray-500">
-           <p>izystore 2026. Apple Store of the Future concept.</p>
-        </footer>
+        <TradeIn />
+        <Testimonial />
+        <WhatsAppCTA />
+        <Footer />
+        <FloatingSocials />
       </main>
     </div>
   )

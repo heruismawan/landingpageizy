@@ -65,6 +65,7 @@ export function Hero() {
 
   return (
     <section
+      id="beranda"
       ref={heroRef}
       className="relative w-full min-h-[220vh] flex flex-col items-center justify-start overflow-clip pt-32"
     >

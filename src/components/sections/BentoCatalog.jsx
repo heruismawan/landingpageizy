@@ -76,7 +76,7 @@ export function BentoCatalog() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-black overflow-hidden flex flex-col items-center justify-center pt-24 pb-32 z-20 perspective-[2000px]">
+    <section id="katalog" className="relative w-full min-h-[90vh] bg-black overflow-hidden flex flex-col items-center justify-center py-16 z-20 perspective-[2000px]">
       
       {/* Dynamic Background Glow */}
       <AnimatePresence mode="popLayout">
@@ -99,7 +99,7 @@ export function BentoCatalog() {
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: -100, opacity: 0, scale: 1.1 }}
             transition={{ duration: 0.8, type: "spring" }}
-            className="text-[18vw] font-black text-white/5 whitespace-nowrap tracking-tighter"
+            className="text-[15vw] font-black text-white/5 whitespace-nowrap tracking-tighter"
           >
             {activeItem.title}
           </motion.h1>
@@ -107,19 +107,19 @@ export function BentoCatalog() {
       </div>
 
       {/* Header */}
-      <div className="absolute top-12 left-0 w-full px-8 flex justify-between items-end z-30">
+      <div className="absolute top-8 left-0 w-full px-8 flex justify-between items-end z-30">
         <div>
           <h2 className="text-sm uppercase tracking-widest text-blue-400 font-semibold mb-2">
             katalog produk
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-white">
-            Pilih Kekuatanmu.
+            Rekomendasi Terbaik Untukmu.
           </h3>
         </div>
       </div>
 
       {/* 3D Carousel Stage */}
-      <div className="relative w-[60vw] max-w-[220px] md:max-w-sm aspect-[9/16] perspective-[1200px] z-30 mt-[-5vh]">
+      <div className="relative w-[55vw] max-w-[200px] md:max-w-[320px] aspect-[9/16] perspective-[1200px] z-30 mt-4 mb-28">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={page}
@@ -178,7 +178,7 @@ export function BentoCatalog() {
         initial={{ opacity: 0, y: 50, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ delay: 0.2, duration: 0.6, type: 'spring' }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[95%] max-w-4xl bg-zinc-900/60 backdrop-blur-3xl border border-white/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-40"
+        className="mt-8 md:mt-0 md:absolute md:bottom-6 md:left-1/2 md:-translate-x-1/2 w-[95%] max-w-4xl bg-zinc-900/60 backdrop-blur-3xl border border-white/10 rounded-3xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-40"
       >
         <div className="flex-1 mb-4 md:mb-0 md:mr-8 text-center md:text-left">
           <h3 className="text-xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-2">
